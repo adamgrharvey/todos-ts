@@ -1,0 +1,32 @@
+{
+  "name": "@todos-ts/server",
+  "version": "1.0.0",
+  "description": "Fastify server for todos-ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "lint": "eslint src --ext .ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@todos-ts/shared": "^1.0.0",
+    "fastify": "^4.21.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/mongodb": "^7.0.0",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "jest": "^29.6.2",
+    "@types/jest": "^29.5.4",
+    "tsx": "^3.12.7",
+    "typescript": "^5.2.2"
+  }
+}
